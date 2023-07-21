@@ -1,0 +1,389 @@
+/* FOR small desktop 1366px*/
+
+@media (max-width: 85.375em) {
+  .header-page {
+    padding: 0 2.4rem;
+  }
+  .h1-hero {
+    font-size: 4.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonial-head-text {
+    font-size: 3.8rem;
+  }
+  .testimonials-container {
+    grid-template-columns: 1fr;
+    row-gap: 9.8rem;
+  }
+  .testimonials {
+    justify-content: start;
+    gap: 16.2rem;
+  }
+  .testimonial-head-text {
+    font-size: 3.2rem;
+  }
+}
+/* LARGE TABLETE : 1200px*/
+@media (max-width: 75em) {
+  html {
+    font-size: 52%;
+  }
+  .head-section {
+    font-size: 3.6rem;
+  }
+  .step-head {
+    font-size: 2.8rem;
+  }
+  .cta-head {
+    font-size: 3.8rem;
+  }
+  .grid {
+    row-gap: 6.4rem;
+    column-gap: 3.2rem;
+  }
+  .diet-head {
+    font-size: 2.2rem;
+  }
+  .testimonial-head-text {
+    font-size: 3.2rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+  .section-testimonials-gallery {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 9.8rem;
+    row-gap: 4.8rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .testimonial-header {
+    text-align: center;
+  }
+  .testimonials {
+    gap: 9.8rem;
+  }
+}
+
+/* SMALL TABLETE 950px */
+@media (max-width: 59.375em) {
+  html {
+    font-size: 50%;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+    row-gap: 9.8rem;
+  }
+  .hero-text-box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-img-box {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .featured-in-logo {
+    height: 2.4rem;
+  }
+  .h1-hero,
+  .p-hero {
+    padding: 0 6.4rem;
+  }
+  .imgs-deliverd-meals {
+    justify-content: center;
+  }
+  .step-num {
+    font-size: 7.4rem;
+  }
+  .meal-card {
+    padding-bottom: 0;
+  }
+  .meal-info-text {
+    padding: 1.6rem 2.4rem;
+    padding-bottom: 3.8rem;
+  }
+  .meal-card {
+    align-self: start;
+  }
+  .list {
+    gap: 1.6rem;
+  }
+  .price-plan {
+    width: 90%;
+  }
+  .list-item p {
+    font-size: 1.8rem;
+  }
+  .cta-head {
+    font-size: 3.6rem;
+  }
+  .cta-container {
+    grid-template-columns: 5fr 3fr;
+  }
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .sign-up {
+    margin-top: 1.2rem;
+  }
+  /* Mobile Navigation */
+  .header-page {
+    position: relative;
+  }
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+    /* WE need to make it by default -->> hidden */
+    /* If we use display:none; it will work ,but we can't make transitions*/
+    /* Rather we will use opacity to make transition */
+    /* Steps to hide nav-bar without display:none;*/
+
+    /* 1- opacity */
+    opacity: 0;
+
+    /* 2- Make it unacssible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3- Hide it from screen readers */
+    visibility: hidden;
+  }
+  .nav-mobile-active .main-nav {
+    opacity: 100%;
+    /* To make it visible */
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-mobile-active .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-mobile-active .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .btn-mobile-nav {
+    display: block;
+    z-index: 999;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+  .a-main-nav:link,
+  .a-main-nav:visited {
+    font-size: 3rem;
+  }
+  .logo {
+    z-index: 1;
+  }
+}
+/* small tablets 750px */
+@media (max-width: 46.875em) {
+  .grid--3--col,
+  .grid--4--col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--2--col {
+    grid-template-columns: 1fr;
+  }
+  .steps-conatiner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .price-plan {
+    justify-self: center;
+    width: 60%;
+  }
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+    align-self: center;
+  }
+  .how-header,
+  .meals-head,
+  .pricing-head-text {
+    margin-bottom: 4.8rem;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 9.8rem;
+  }
+  .footer {
+    padding-bottom: 0;
+  }
+  .logo-col {
+    grid-column: 1 / span 3;
+    grid-row: 2/3;
+  }
+  .address-col {
+    grid-column: 4 / span 3;
+    grid-row: 2/3;
+  }
+  .nav-col {
+    grid-column: span 2;
+  }
+  .featured-in-logo {
+    height: 2rem;
+  }
+  .price-plan-info-text {
+    text-align: center;
+  }
+}
+/*
+Moblie phones below 600px 
+*/
+@media (max-width: 37.5em) {
+  html {
+    font-size: 42%;
+  }
+  .grid {
+    justify-items: center;
+  }
+  .grid--3--col,
+  .grid--4--col,
+  .grid--2--col,
+  .steps-conatiner,
+  .testimonials-container {
+    grid-template-columns: 1fr;
+    row-gap: 3.6rem;
+  }
+  .hero-container {
+    row-gap: 3.6rem;
+  }
+  .h1-hero,
+  .p-hero {
+    padding: 0;
+  }
+  .featured-in-logo {
+    height: 1.4rem;
+  }
+  .how-header {
+    margin-top: 3.6rem;
+  }
+  .meal-card {
+    width: 80%;
+    margin: 0 4.8rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .price-plan {
+    width: 80%;
+  }
+  .section-meals {
+    padding-bottom: 4.8rem;
+  }
+  .testimonials {
+    gap: 4.8rem;
+    padding: 2.4rem 4.8rem;
+  }
+  .section-cta {
+    padding-top: 3.6rem;
+  }
+  .cta-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  .cta-img-box {
+    grid-row: 1/2;
+  }
+  .cta-text-box {
+    padding: 2.4rem 2.4rem;
+  }
+  .cta-head {
+    text-align: center;
+  }
+  .btn:link,
+  .btn:visited {
+    padding: 1.6rem 1.6rem;
+    font-size: 1.8rem;
+  }
+  .hero-img {
+    width: 70%;
+  }
+  .img-box:nth-child(2) {
+    grid-row: 1/2;
+  }
+  .img-box:nth-child(6) {
+    grid-row: 5/6;
+  }
+  .step-text-box {
+    margin-bottom: 6.4rem;
+  }
+  .step-text-box:nth-child(5) {
+    margin-bottom: 0;
+  }
+  .img-box {
+    transform: translateY(30px);
+  }
+}
+/* Fixing gap in saphari */
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
