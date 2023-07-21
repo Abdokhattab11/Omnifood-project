@@ -13,14 +13,6 @@ The Omnifood project is built using :
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 
-## Screenshots
-  
-![Hero Secion]()
-
-![Large Tablet View]()
-
-
-![Phone View]()
 
 ## Description
 
@@ -32,6 +24,15 @@ The website features a user-friendly interface, beautiful food imagery, and an e
 
 To view the project : <a href="https://omnifood-abdo-khattab.netlify.app/">OmniFood Website </a>
 
+## Screenshots
+  
+![Hero Secion](screenshots/Hero.png)
+![How it works](screenshots/How%20it%20work.png)
+![Gallary](screenshots/gallay%20%26%20Testomonials.png)
+![meals](screenshots/meals.png)
+![plans](screenshots/plans.png)
+![form](screenshots/form.png)
+![foolter](screenshots/footer.png)
 
 ## Contributing
 
